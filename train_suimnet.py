@@ -73,6 +73,6 @@ train_gen = trainDataGenerator(
 )
 
 ## fit model
-model.fit_generator(
+model.fit(
     train_gen, steps_per_epoch=5000, epochs=num_epochs, callbacks=[model_checkpoint]
 )
