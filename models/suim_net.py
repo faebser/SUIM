@@ -145,7 +145,7 @@ class SUIM_Net:
         elif base == "VGG":
             self.model = self.get_model_VGG16(n_classes)
             self.model.compile(
-                optimizer=Adam(lr=self.lr0),
+                optimizer=Adam(learning_rate=self.lr0),
                 loss="binary_crossentropy",
                 metrics=["accuracy"],
             )
