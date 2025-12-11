@@ -31,9 +31,11 @@ if not exists(ckpt_dir):
     os.makedirs(ckpt_dir)
 
 ## initialize model
-suimnet = SUIM_Net(base=base_, im_res=im_res_, n_classes=5)
+suimnet = SUIM_Net(base=base_, im_res=im_res_, n_classes=8)
 model = suimnet.model
+print("here")
 print(model.summary())
+print("here2")
 ## load saved model
 # model.load_weights(join("ckpt/saved/", "***.hdf5"))
 
