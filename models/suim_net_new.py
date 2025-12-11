@@ -155,6 +155,7 @@ class SUIM_Net:
         return Model(inputs=img_input, outputs=out)
 
     def get_model_VGG16(self, n_classes):
+        print(f"input_shape: {self.img_shape}")
         vgg = VGG16(input_shape=self.img_shape, include_top=False, weights="imagenet")
         vgg.trainable = True
         # encoder
