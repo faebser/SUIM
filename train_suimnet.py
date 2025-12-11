@@ -10,7 +10,7 @@ from os.path import join, exists
 from keras import callbacks
 
 # local libs
-from models.suim_net import SUIM_Net
+from models.suim_net_new import SUIM_Net
 from utils.data_utils import trainDataGenerator
 
 ## dataset directory
