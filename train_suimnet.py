@@ -15,7 +15,7 @@ from utils.data_utils import trainDataGenerator
 
 ## dataset directory
 dataset_name = "suim"
-train_dir = "/mnt/data1/ImageSeg/suim/train_val/"
+train_dir = "/content/drive/MyDrive/miniproject/train_val"
 
 ## ckpt directory
 ckpt_dir = "ckpt/"
